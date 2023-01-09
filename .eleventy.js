@@ -1,11 +1,19 @@
 module.exports = function (eleventyConfig) {
   // Options to customise the appearance of your design history
+  const url = process.env.GITHUB_ACTIONS
+    ? 'https://alex-hedley.github.io/design-history/'
+    : '/'
+  const pathPrefix = process.env.GITHUB_ACTIONS
+    ? '/design-history/'
+    : '/'
   // https://x-govuk.github.io/govuk-eleventy-plugin/options/
   eleventyConfig.addPlugin(require('govuk-eleventy-plugin'), {
     stylesheets: [
       '/styles/application.css'
     ],
     headingPermalinks: true,
+    pathPrefix, 
+    url,
     header: {
       organisationLogo: false,
       productName: 'Design history',
@@ -37,6 +45,7 @@ module.exports = function (eleventyConfig) {
       output: 'public',
       layouts: '_layouts',
       includes: '_components'
-    }
+    },
+    pathPrefix
   }
 }
