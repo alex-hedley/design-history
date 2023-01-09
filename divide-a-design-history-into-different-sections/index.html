@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Divide a design history into different sections - Design history - GOV.UK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/design-history/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="mask-icon" href="/design-history/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
+  <link rel="apple-touch-icon" href="/design-history/assets/images/govuk-apple-touch-icon.png">
+
+  <link rel="stylesheet" href="https://alex-hedley.github.io/design-history/assets/govuk.css">
+  <link rel="stylesheet" href="https://alex-hedley.github.io/design-history/styles/application.css">
+
+  <meta property="og:url" content="https://alex-hedley.github.io/design-history/divide-a-design-history-into-different-sections/">
+  <meta property="og:title" content="Divide a design history into different sections">
+<meta property="og:description" name="description" content="Learn how to divide your design history site into different sections. You can use this if your team is building multiple products or services.">
+    
+    <meta property="og:image" content="https://alex-hedley.github.io/design-history/undefined/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+      <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+
+  <header class="govuk-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container app-header__container">
+    <div class="govuk-header__logo app-header__logo">
+      <a href="/design-history/" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype">
+          <span class="govuk-header__logotype-text">
+            GOV.UK
+          </span>
+        </span>
+        <span class="govuk-header__product-name">
+          Design history
+        </span>
+      </a>
+    </div>
+    <div class="app-site-search govuk-!-display-none-print" data-module="app-site-search" data-search-index="/design-history/search.json">
+  <label class="govuk-visually-hidden" for="app-site-search__input">Search site</label>
+  <a class="app-site-search__link govuk-link-no-visited" href="/design-history/sitemap">Sitemap</a>
+</div>
+
+  </div>
+</header>
+
+
+      <div class="govuk-width-container ">
+  <div class="govuk-breadcrumbs govuk-!-display-none-print">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/design-history/">Home</a>
+    </li>
+  </ol>
+</div>
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <header class="app-document-header">
+  <h1 class="app-document-header__title govuk-heading-xl">
+    Divide a design history into different&nbsp;sections
+  </h1>
+</header>
+
+
+
+      <footer class="app-document-footer">
+  <p class="app-document-footer__metadata">
+    <span class="govuk-visually-hidden">Posted on: </span><time datetime="2020-01-01T00:00:00.000Z">1 January 2020</time>
+  </p>
+</footer>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+<div class="app-prose-scope">
+        <p class="govuk-body">If your service has different parts, for example a public facing service and an admin interface, you may want to divide your history into sections for each part.</p>
+<h2 id="set-up-a-folder-for-each-section" tabindex="-1" class="govuk-heading-l"><a class="app-link--heading govuk-link" href="#set-up-a-folder-for-each-section"><span>Set up a folder for each section</span></a></h2>
+<p class="govuk-body">You can group posts together into sections using folders:</p>
+<ol class="govuk-list govuk-list--number">
+<li>
+<p class="govuk-body">Create a folder for each section in <code class="x-govuk-code x-govuk-code--inline">app/posts</code>. Use dashes instead of spaces in the the folder names.</p>
+</li>
+<li>
+<p class="govuk-body">Create a <code class="x-govuk-code x-govuk-code--inline">.json</code> file in each folder. Use the same name as the folder. For the folder <code class="x-govuk-code x-govuk-code--inline">app/posts/support-interface</code>, the JSON file would be <code class="x-govuk-code x-govuk-code--inline">app/posts/support-interface/support-interface.json</code>.</p>
+</li>
+<li>
+<p class="govuk-body">This is a <a href="https://www.11ty.dev/docs/data-template-dir/" class="govuk-link">directory data file</a>, and it can be used to set the default values for all posts that sit within this folder.</p>
+</li>
+<li>
+<p class="govuk-body">In this JSON file, declare a tag which should be used to group these related posts, and a parent name to use in the breadcrumb navigation (the parent being the name of this section). For example</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--json" tabindex="0"><code><span class="x-govuk-code__punctuation">{</span>
+  <span class="x-govuk-code__attr">&quot;tags&quot;</span><span class="x-govuk-code__punctuation">:</span> <span class="x-govuk-code__punctuation">[</span><span class="x-govuk-code__string">&quot;support-interface&quot;</span><span class="x-govuk-code__punctuation">]</span><span class="x-govuk-code__punctuation">,</span>
+  <span class="x-govuk-code__attr">&quot;eleventyNavigation&quot;</span><span class="x-govuk-code__punctuation">:</span> <span class="x-govuk-code__punctuation">{</span>
+    <span class="x-govuk-code__attr">&quot;parent&quot;</span><span class="x-govuk-code__punctuation">:</span> <span class="x-govuk-code__string">&quot;Service support interface&quot;</span>
+  <span class="x-govuk-code__punctuation">}</span>
+<span class="x-govuk-code__punctuation">}</span>
+</code></pre>
+
+</li>
+</ol>
+<h2 id="create-an-index-page-for-each-section" tabindex="-1" class="govuk-heading-l"><a class="app-link--heading govuk-link" href="#create-an-index-page-for-each-section"><span>Create an index page for each section</span></a></h2>
+<p class="govuk-body">Next, create a page that lists these related posts. You can do that by creating an index page.</p>
+<ol class="govuk-list govuk-list--number">
+<li>
+<p class="govuk-body">In the <code class="x-govuk-code x-govuk-code--inline">posts</code> folder, create a markdown <code class="x-govuk-code x-govuk-code--inline">.md</code> file for each section. For the folder <code class="x-govuk-code x-govuk-code--inline">app/posts/support-interface/</code>, add the file <code class="x-govuk-code x-govuk-code--inline">app/posts/support-interface.md</code>.</p>
+</li>
+<li>
+<p class="govuk-body">At the top of the markdown file for the section, add this front matter data:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--yaml" tabindex="0"><code><span class="x-govuk-code__meta">---</span>
+<span class="x-govuk-code__attr">layout:</span> <span class="x-govuk-code__string">collection</span>
+<span class="x-govuk-code__attr">title:</span> <span class="x-govuk-code__string">Service</span> <span class="x-govuk-code__string">support</span> <span class="x-govuk-code__string">interface</span>
+<span class="x-govuk-code__attr">description:</span> <span class="x-govuk-code__string">A</span> <span class="x-govuk-code__string">tool</span> <span class="x-govuk-code__string">for</span> <span class="x-govuk-code__string">support</span> <span class="x-govuk-code__string">agents</span> <span class="x-govuk-code__string">to</span> <span class="x-govuk-code__string">manage</span> <span class="x-govuk-code__string">the</span> <span class="x-govuk-code__string">service</span>
+<span class="x-govuk-code__attr">pagination:</span>
+  <span class="x-govuk-code__attr">data:</span> <span class="x-govuk-code__string">collections.support-interface</span>
+  <span class="x-govuk-code__attr">reverse:</span> <span class="x-govuk-code__literal">true</span>
+  <span class="x-govuk-code__attr">size:</span> <span class="x-govuk-code__number">50</span>
+<span class="x-govuk-code__attr">permalink:</span> <span class="x-govuk-code__string">&quot;support-interface/{% if pagination.pageNumber &gt; 0 %}page/<span class="x-govuk-code__template-variable">{{ pagination.pageNumber + 1 }}</span>{% endif %}/&quot;</span>
+<span class="x-govuk-code__meta">---
+</span></code></pre>
+
+<p class="govuk-body">The value for <code class="x-govuk-code x-govuk-code--inline">pagination.data</code> should use the collection created by the tag you added to the JSON file for the section. This tells the index page which posts to list. For example, if your tag is <code class="x-govuk-code x-govuk-code--inline">support-interface</code>, the value for <code class="x-govuk-code x-govuk-code--inline">pagination.data</code> would be <code class="x-govuk-code x-govuk-code--inline">collections.support-interface</code>.</p>
+<p class="govuk-body">You do not need to add any body content, but if you do, this will appear above the list of posts in this section.</p>
+</li>
+</ol>
+<h2 id="update-the-home-page-to-link-to-each-section" tabindex="-1" class="govuk-heading-l"><a class="app-link--heading govuk-link" href="#update-the-home-page-to-link-to-each-section"><span>Update the home page to link to each section</span></a></h2>
+<p class="govuk-body">Currently the homepage lists all posts on the site. Change it so that only sections are linked to instead by removing these lines from <code class="x-govuk-code x-govuk-code--inline">app/index.md</code>:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--yaml" tabindex="0"><code><span class="x-govuk-code__attr">pagination:</span>
+  <span class="x-govuk-code__attr">data:</span> <span class="x-govuk-code__string">collections.post</span>
+  <span class="x-govuk-code__attr">reverse:</span> <span class="x-govuk-code__literal">true</span>
+  <span class="x-govuk-code__attr">size:</span> <span class="x-govuk-code__number">50</span>
+<span class="x-govuk-code__attr">posts:</span>
+  <span class="x-govuk-code__attr">title:</span> <span class="x-govuk-code__string">Getting</span> <span class="x-govuk-code__string">started</span>
+</code></pre>
+
+<p class="govuk-body">You can change the content of the heading on the homepage by adding these lines to <code class="x-govuk-code x-govuk-code--inline">app/index.md</code>:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--yaml" tabindex="0"><code><span class="x-govuk-code__attr">sections:</span>
+  <span class="x-govuk-code__attr">title:</span> <span class="x-govuk-code__string">Services</span>
+</code></pre>
+
+
+
+          
+</div>
+    </div>
+
+  </div>
+        </main>
+      </div>
+
+  <footer class="govuk-footer app-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <span class="govuk-footer__licence-description">
+            An unofficial community project. <a class="govuk-footer__link" href="https://github.com/x-govuk/x-govuk.github.io">GitHub source</a>.
+          </span>
+      </div>
+      <div class="govuk-footer__meta-item">© X-GOVUK
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/design-history/assets/govuk.js"></script>
+  <script>document.documentElement.classList.remove('no-js')</script>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Generate a page of screenshots - Design history - GOV.UK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/design-history/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="mask-icon" href="/design-history/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
+  <link rel="apple-touch-icon" href="/design-history/assets/images/govuk-apple-touch-icon.png">
+
+  <link rel="stylesheet" href="https://alex-hedley.github.io/design-history/assets/govuk.css">
+  <link rel="stylesheet" href="https://alex-hedley.github.io/design-history/styles/application.css">
+
+  <meta property="og:url" content="https://alex-hedley.github.io/design-history/generate-a-page-of-screenshots/">
+  <meta property="og:title" content="Generate a page of screenshots">
+<meta property="og:description" name="description" content="Learn how to use the 2 scripts that generate posts containing a series of screenshots.">
+    
+    <meta property="og:image" content="https://alex-hedley.github.io/design-history/undefined/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+      <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+
+  <header class="govuk-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container app-header__container">
+    <div class="govuk-header__logo app-header__logo">
+      <a href="/design-history/" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype">
+          <span class="govuk-header__logotype-text">
+            GOV.UK
+          </span>
+        </span>
+        <span class="govuk-header__product-name">
+          Design history
+        </span>
+      </a>
+    </div>
+    <div class="app-site-search govuk-!-display-none-print" data-module="app-site-search" data-search-index="/design-history/search.json">
+  <label class="govuk-visually-hidden" for="app-site-search__input">Search site</label>
+  <a class="app-site-search__link govuk-link-no-visited" href="/design-history/sitemap">Sitemap</a>
+</div>
+
+  </div>
+</header>
+
+
+      <div class="govuk-width-container ">
+  <div class="govuk-breadcrumbs govuk-!-display-none-print">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/design-history/">Home</a>
+    </li>
+  </ol>
+</div>
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <header class="app-document-header">
+  <h1 class="app-document-header__title govuk-heading-xl">
+    Generate a page of&nbsp;screenshots
+  </h1>
+</header>
+
+
+
+      <footer class="app-document-footer">
+  <p class="app-document-footer__metadata">
+    <span class="govuk-visually-hidden">Posted on: </span><time datetime="2020-01-02T00:00:00.000Z">2 January 2020</time>
+  </p>
+</footer>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+<div class="app-prose-scope">
+        <p class="govuk-body">The design history project provides 2 scripts to help you generate a post featuring a list of screenshots. <a href="/example-post/" class="govuk-link">See an example</a>.</p>
+<p class="govuk-body">The first allows you to capture these screenshots from a sequence of URLs, perhaps from a user journey you have prototyped, the second allows you to generate a page from a folder of images.</p>
+<h2 id="generate-a-post-with-screenshots-taken-from-a-sequence-of-urls" tabindex="-1" class="govuk-heading-l"><a class="app-link--heading govuk-link" href="#generate-a-post-with-screenshots-taken-from-a-sequence-of-urls"><span>Generate a post with screenshots taken from a sequence of URLs</span></a></h2>
+<ol class="govuk-list govuk-list--number">
+<li>
+<p class="govuk-body">Open <code class="x-govuk-code x-govuk-code--inline">scripts/screenshot.js</code>. In this file you will see 2 values:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="x-govuk-code x-govuk-code--inline">domain</code>: the website you want to screenshot, eg localhost:3000</li>
+<li><code class="x-govuk-code x-govuk-code--inline">paths</code>: an array of named paths</li>
+</ul>
+<p class="govuk-body">Replace these with your desired values.</p>
+</li>
+<li>
+<p class="govuk-body">In the terminal, type:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--shell" tabindex="0"><code>node scripts/screenshot.js [name-of-your-feature]
+</code></pre>
+
+<p class="govuk-body">This will:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>visit each page lists in paths and save a screenshot</li>
+<li>save those screenshots in the named directory</li>
+<li>generate an index page with screenshots listed in order</li>
+</ul>
+</li>
+</ol>
+<h3 id="example" tabindex="-1" class="govuk-heading-m"><a class="app-link--heading govuk-link" href="#example"><span>Example</span></a></h3>
+<p class="govuk-body">With the following values in <code class="x-govuk-code x-govuk-code--inline">scripts/screenshots.js</code>:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--js" tabindex="0"><code><span class="x-govuk-code__keyword">const</span> domain = <span class="x-govuk-code__string">&#x27;http://localhost:3000&#x27;</span>
+<span class="x-govuk-code__keyword">const</span> paths = [
+  { <span class="x-govuk-code__attr">title</span>: <span class="x-govuk-code__string">&#x27;Start page&#x27;</span>, <span class="x-govuk-code__attr">path</span>: <span class="x-govuk-code__string">&#x27;/&#x27;</span> },
+  { <span class="x-govuk-code__attr">title</span>: <span class="x-govuk-code__string">&#x27;Personal details&#x27;</span>, <span class="x-govuk-code__attr">path</span>: <span class="x-govuk-code__string">&#x27;/personal-details&#x27;</span> },
+  { <span class="x-govuk-code__attr">title</span>: <span class="x-govuk-code__string">&#x27;Check your answers&#x27;</span>, <span class="x-govuk-code__attr">path</span>: <span class="x-govuk-code__string">&#x27;/check-your-answers&#x27;</span> },
+  { <span class="x-govuk-code__attr">title</span>: <span class="x-govuk-code__string">&#x27;Confirmation&#x27;</span>, <span class="x-govuk-code__attr">path</span>: <span class="x-govuk-code__string">&#x27;/confirmation&#x27;</span> }
+]
+</code></pre>
+
+<p class="govuk-body">running <code class="x-govuk-code x-govuk-code--inline">node scripts/screenshot.js submit-personal-details</code> will generate the following images:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="x-govuk-code x-govuk-code--inline">app/images/submit-personal-details/start-page.png</code></li>
+<li><code class="x-govuk-code x-govuk-code--inline">app/images/submit-personal-details/personal-details.png</code></li>
+<li><code class="x-govuk-code x-govuk-code--inline">app/images/submit-personal-details/check-your-answers.png</code></li>
+<li><code class="x-govuk-code x-govuk-code--inline">app/images/submit-personal-details/confirmation-page.png</code></li>
+</ul>
+<p class="govuk-body">A post will also be created, using the name of the directory and current date, for example:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="x-govuk-code x-govuk-code--inline">app/posts/2023-01-09-submit-personal-details.md</code></li>
+</ul>
+<h2 id="generate-a-page-of-screenshots-from-a-folder-of-images" tabindex="-1" class="govuk-heading-l"><a class="app-link--heading govuk-link" href="#generate-a-page-of-screenshots-from-a-folder-of-images"><span>Generate a page of screenshots from a folder of images</span></a></h2>
+<ol class="govuk-list govuk-list--number">
+<li>
+<p class="govuk-body">Create a new folder within <code class="x-govuk-code x-govuk-code--inline">app/images</code>.</p>
+</li>
+<li>
+<p class="govuk-body">Add images inside this folder. Screenshots will be generated in alphabetical order. If you want to have them appear in sequence, you can use numbered prefixes, ie. <code class="x-govuk-code x-govuk-code--inline">01-index-page.png</code>, <code class="x-govuk-code x-govuk-code--inline">02-question-page.png</code>.</p>
+</li>
+<li>
+<p class="govuk-body">In the terminal, type:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--shell" tabindex="0"><code>node scripts/generate.js [name-of-directory-holding-images]
+</code></pre>
+
+<p class="govuk-body">This will generate an index page with screenshots listed in order, creating a post using the name of the containing folder.</p>
+</li>
+</ol>
+<h2 id="the-generated-post" tabindex="-1" class="govuk-heading-l"><a class="app-link--heading govuk-link" href="#the-generated-post"><span>The generated post</span></a></h2>
+<p class="govuk-body">This file will be pre-populated with a title, date, and a list of screenshots:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--yaml" tabindex="0"><code><span class="x-govuk-code__meta">---</span>
+<span class="x-govuk-code__attr">title:</span> <span class="x-govuk-code__string">Submit</span> <span class="x-govuk-code__string">personal</span> <span class="x-govuk-code__string">details</span>
+<span class="x-govuk-code__attr">date:</span> <span class="x-govuk-code__number">2023-01-09</span>
+<span class="x-govuk-code__attr">screenshots:</span>
+  <span class="x-govuk-code__attr">items:</span>
+    <span class="x-govuk-code__bullet">-</span> <span class="x-govuk-code__string">&quot;Index page&quot;</span>
+    <span class="x-govuk-code__bullet">-</span> <span class="x-govuk-code__string">&quot;Personal details&quot;</span>
+    <span class="x-govuk-code__bullet">-</span> <span class="x-govuk-code__string">&quot;Check your answers&quot;</span>
+    <span class="x-govuk-code__bullet">-</span> <span class="x-govuk-code__string">&quot;Confirmation&quot;</span>
+<span class="x-govuk-code__meta">---
+</span></code></pre>
+
+<p class="govuk-body">If you want to change the name of any images, you can use the <code class="x-govuk-code x-govuk-code--inline">src</code> value to tell the screenshots component what filename to look for, for example:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--yaml" tabindex="0"><code><span class="x-govuk-code__attr">title:</span> <span class="x-govuk-code__string">Submit</span> <span class="x-govuk-code__string">personal</span> <span class="x-govuk-code__string">details</span>
+<span class="x-govuk-code__attr">date:</span> <span class="x-govuk-code__number">2023-01-09</span>
+<span class="x-govuk-code__attr">screenshots:</span>
+  <span class="x-govuk-code__attr">items:</span>
+    <span class="x-govuk-code__bullet">-</span> <span class="x-govuk-code__attr">text:</span> <span class="x-govuk-code__string">&quot;Index page&quot;</span>
+      <span class="x-govuk-code__attr">src:</span> <span class="x-govuk-code__string">a-different-index-page-image.jpg</span>
+    <span class="x-govuk-code__bullet">-</span> <span class="x-govuk-code__string">&quot;Personal details&quot;</span>
+    <span class="x-govuk-code__bullet">-</span> <span class="x-govuk-code__string">&quot;Check your answers&quot;</span>
+    <span class="x-govuk-code__bullet">-</span> <span class="x-govuk-code__string">&quot;Confirmation&quot;</span>
+</code></pre>
+
+
+
+          
+</div>
+    </div>
+
+      <div class="govuk-grid-column-one-third-from-desktop">
+<div class="x-govuk-related-navigation">
+    <nav class="x-govuk-related-navigation__nav-section" role="navigation" aria-labelledby="related-navigation-related-content">
+      <h2 class="x-govuk-related-navigation__main-heading" id="related-navigation-related-content">
+        Related content
+      </h2>
+        <ul class="x-govuk-related-navigation__link-list">
+            <li class="x-govuk-related-navigation__link">
+              <a class="govuk-link x-govuk-related-navigation__section-link x-govuk-related-navigation__section-link--other" href="/example-post">An example post with screenshots</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+      </div>
+  </div>
+        </main>
+      </div>
+
+  <footer class="govuk-footer app-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <span class="govuk-footer__licence-description">
+            An unofficial community project. <a class="govuk-footer__link" href="https://github.com/x-govuk/x-govuk.github.io">GitHub source</a>.
+          </span>
+      </div>
+      <div class="govuk-footer__meta-item">© X-GOVUK
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/design-history/assets/govuk.js"></script>
+  <script>document.documentElement.classList.remove('no-js')</script>
+  </body>
+</html>

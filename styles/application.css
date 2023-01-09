@@ -1,0 +1,51 @@
+.app-email {
+  border: 5px solid #b1b4b6;
+  padding: 20px;
+  margin-bottom: 50px;
+  max-width: 40rem;
+}
+.app-email h1, .app-email h2, .app-email h3, .app-email h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.1111111111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+@media (min-width: 40.0625em) {
+  .app-email h1, .app-email h2, .app-email h3, .app-email h4 {
+    font-size: 27px;
+    font-size: 1.6875rem;
+    line-height: 1.1111111111;
+  }
+}
+@media print {
+  .app-email h1, .app-email h2, .app-email h3, .app-email h4 {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
+.app-email__subject {
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #b1b4b6;
+}
+
+.app-screenshots__contents,
+.app-screenshots__screenshot {
+  margin-bottom: 60px;
+}
+
+@media print {
+  .app-screenshots {
+    page-break-before: always;
+    page-break-after: always;
+  }
+  .app-screenshots__screenshot {
+    page-break-before: always;
+  }
+  .app-screenshots__screenshot a:after {
+    display: none;
+  }
+}

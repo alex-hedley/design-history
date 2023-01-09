@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Set up a design history - Design history - GOV.UK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/design-history/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="mask-icon" href="/design-history/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
+  <link rel="apple-touch-icon" href="/design-history/assets/images/govuk-apple-touch-icon.png">
+
+  <link rel="stylesheet" href="https://alex-hedley.github.io/design-history/assets/govuk.css">
+  <link rel="stylesheet" href="https://alex-hedley.github.io/design-history/styles/application.css">
+
+  <meta property="og:url" content="https://alex-hedley.github.io/design-history/set-up-a-design-history/">
+  <meta property="og:title" content="Set up a design history">
+<meta property="og:description" name="description" content="Learn how to install, customise and publish your design history.">
+    
+    <meta property="og:image" content="https://alex-hedley.github.io/design-history/undefined/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+      <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+
+  <header class="govuk-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container app-header__container">
+    <div class="govuk-header__logo app-header__logo">
+      <a href="/design-history/" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype">
+          <span class="govuk-header__logotype-text">
+            GOV.UK
+          </span>
+        </span>
+        <span class="govuk-header__product-name">
+          Design history
+        </span>
+      </a>
+    </div>
+    <div class="app-site-search govuk-!-display-none-print" data-module="app-site-search" data-search-index="/design-history/search.json">
+  <label class="govuk-visually-hidden" for="app-site-search__input">Search site</label>
+  <a class="app-site-search__link govuk-link-no-visited" href="/design-history/sitemap">Sitemap</a>
+</div>
+
+  </div>
+</header>
+
+
+      <div class="govuk-width-container ">
+  <div class="govuk-breadcrumbs govuk-!-display-none-print">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/design-history/">Home</a>
+    </li>
+  </ol>
+</div>
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <header class="app-document-header">
+  <h1 class="app-document-header__title govuk-heading-xl">
+    Set up a design&nbsp;history
+  </h1>
+</header>
+
+
+
+      <footer class="app-document-footer">
+  <p class="app-document-footer__metadata">
+    <span class="govuk-visually-hidden">Posted on: </span><time datetime="2020-01-03T00:00:00.000Z">3 January 2020</time>
+  </p>
+</footer>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+<div class="app-prose-scope">
+        <p class="govuk-body">This project makes it easy to:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>create pages of screenshots to document designs</li>
+<li>document designs using the <a href="https://design-system.service.gov.uk/" class="govuk-link">GOV.UK Design System</a></li>
+<li>print pages of designs</li>
+<li>make designs shareable and linkable</li>
+</ul>
+<p class="govuk-body">The project is built using the <a href="https://www.11ty.dev/" class="govuk-link">Eleventy static site generator</a>, meaning your design history site can be adapted as a service grows. This post describes how to get started.</p>
+<h2 id="install" tabindex="-1" class="govuk-heading-l"><a class="app-link--heading govuk-link" href="#install"><span>Install</span></a></h2>
+<p class="govuk-body">Start by making a copy of this project. The easiest way to do this is on GitHub. Visit the <a href="https://github.com/x-govuk/govuk-design-history" class="govuk-link">the govuk-design-history repository</a>, and click ‘Use this template’. You’ll be asked to choose a GitHub user or organisation that should own this new repository, and a name for your copy.</p>
+<p class="govuk-body">To start making changes, you’ll need to download the repository to your own computer. Assuming your GitHub user is <code class="x-govuk-code x-govuk-code--inline">my-username</code>, and you called your repository <code class="x-govuk-code x-govuk-code--inline">my-service-design-history</code>, using the Terminal you would type:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--shell" tabindex="0"><code>git clone git@github.com:my-username/my-service-design-history.git
+</code></pre>
+
+<p class="govuk-body">Next, change into the downloaded folder, and install all the dependencies needed to run the design history project. Do this by typing the following:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--shell" tabindex="0"><code>cd my-service-design-history
+npm install
+</code></pre>
+
+<h2 id="preview" tabindex="-1" class="govuk-heading-l"><a class="app-link--heading govuk-link" href="#preview"><span>Preview</span></a></h2>
+<p class="govuk-body">Before uploading your design history to a public URL, it can be useful to preview it locally, on your own computer. To do this type:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--shell" tabindex="0"><code>npm start
+</code></pre>
+
+<p class="govuk-body">Once all the files have been generated, a URL will be shown which you can enter into your browser’s address bar (usually this is <a href="http://localhost:8081" class="govuk-link">http://localhost:8081</a>).</p>
+<p class="govuk-body">Whenever you add a new post, or edit an existing post, the browser will automatically refresh the page with any changes applied.</p>
+<h2 id="customise" tabindex="-1" class="govuk-heading-l"><a class="app-link--heading govuk-link" href="#customise"><span>Customise</span></a></h2>
+<p class="govuk-body">Before adding posts, you’ll probably want to customise a few things for the site to make sense for your service.</p>
+<h3 id="change-the-name-of-the-website" tabindex="-1" class="govuk-heading-m"><a class="app-link--heading govuk-link" href="#change-the-name-of-the-website"><span>Change the name of the website</span></a></h3>
+<ol class="govuk-list govuk-list--number">
+<li>Open the file <code class="x-govuk-code x-govuk-code--inline">app/_data/app.js</code></li>
+<li>Change the value for <code class="x-govuk-code x-govuk-code--inline">productName</code> to the name you want to use. This name will appear in the header, and in page titles.</li>
+</ol>
+<h3 id="update-the-homepage" tabindex="-1" class="govuk-heading-m"><a class="app-link--heading govuk-link" href="#update-the-homepage"><span>Update the homepage</span></a></h3>
+<ol class="govuk-list govuk-list--number">
+<li>Open the file <code class="x-govuk-code x-govuk-code--inline">app/index.md</code></li>
+<li>Change the value shown for <code class="x-govuk-code x-govuk-code--inline">title</code>. The value you give here is used for the large heading shown at the top of the page</li>
+<li>Change the value shown for <code class="x-govuk-code x-govuk-code--inline">description</code>. The value you give here is used for the text that appears below the title. You can also remove this line if you don’t want to show anything here.</li>
+</ol>
+<h3 id="update-the-footer" tabindex="-1" class="govuk-heading-m"><a class="app-link--heading govuk-link" href="#update-the-footer"><span>Update the footer</span></a></h3>
+<p class="govuk-body">If you want to link to other tools your team uses, you can place these links in the footer.</p>
+<ol class="govuk-list govuk-list--number">
+<li>Open the file <code class="x-govuk-code x-govuk-code--inline">app/_layouts/base.njk</code></li>
+<li>Near the bottom of this file, you’ll notice there is a Nunjucks component called <code class="x-govuk-code x-govuk-code--inline">govukFooter</code>. The design history project uses components from the GOV.UK Design System, and this is an example of that. Follow the <a href="https://design-system.service.gov.uk/components/footer/" class="govuk-link">guidance on the design system website for how you can adapt the footer</a> to suit your needs.</li>
+</ol>
+<h2 id="document" tabindex="-1" class="govuk-heading-l"><a class="app-link--heading govuk-link" href="#document"><span>Document</span></a></h2>
+<p class="govuk-body">You’re now ready to start documenting your designs. To add a new post:</p>
+<ol class="govuk-list govuk-list--number">
+<li>
+<p class="govuk-body">Create a new file in the app/posts folder. Files should be named using the format <code class="x-govuk-code x-govuk-code--inline">YYYY-MM-DD-slug.md</code>, where:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="x-govuk-code x-govuk-code--inline">YYYY</code> is the year</li>
+<li><code class="x-govuk-code x-govuk-code--inline">MM</code> is the month</li>
+<li><code class="x-govuk-code x-govuk-code--inline">DD</code> is the day</li>
+<li><code class="x-govuk-code x-govuk-code--inline">slug</code> is the text you want to appear in the URL</li>
+</ul>
+<p class="govuk-body">For example: <code class="x-govuk-code x-govuk-code--inline">2020-02-19-first-designs.md</code> will create a page that can be reached at <code class="x-govuk-code x-govuk-code--inline">&lt;your-design-history&gt;/first-designs/</code></p>
+</li>
+<li>
+<p class="govuk-body">Posts are made up of 2 parts: a front matter and its contents.</p>
+<p class="govuk-body">A front matter starts and ends with <code class="x-govuk-code x-govuk-code--inline">---</code> and is written using a key/value data format called YAML. In most cases, you will only need three bits of information: <code class="x-govuk-code x-govuk-code--inline">title</code>, <code class="x-govuk-code x-govuk-code--inline">description</code> and <code class="x-govuk-code x-govuk-code--inline">date</code>. For example:</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--yaml" tabindex="0"><code><span class="x-govuk-code__meta">---</span>
+<span class="x-govuk-code__attr">title:</span> <span class="x-govuk-code__string">First</span> <span class="x-govuk-code__string">designs</span> <span class="x-govuk-code__string">for</span> <span class="x-govuk-code__string">a</span> <span class="x-govuk-code__string">minimum</span> <span class="x-govuk-code__string">viable</span> <span class="x-govuk-code__string">service</span>
+<span class="x-govuk-code__attr">description:</span> <span class="x-govuk-code__string">A</span> <span class="x-govuk-code__string">minimum</span> <span class="x-govuk-code__string">viable</span> <span class="x-govuk-code__string">service</span> <span class="x-govuk-code__string">that</span> <span class="x-govuk-code__string">could</span> <span class="x-govuk-code__string">allow</span> <span class="x-govuk-code__string">the</span> <span class="x-govuk-code__string">providers</span> <span class="x-govuk-code__string">to</span> <span class="x-govuk-code__string">access</span> <span class="x-govuk-code__string">and</span> <span class="x-govuk-code__string">manage</span> <span class="x-govuk-code__string">their</span> <span class="x-govuk-code__string">ITT</span> <span class="x-govuk-code__string">applications.</span>
+<span class="x-govuk-code__attr">date:</span> <span class="x-govuk-code__number">2020-02-19</span>
+<span class="x-govuk-code__meta">---
+</span></code></pre>
+
+<p class="govuk-body">The content portion of a post uses Markdown, a lightweight markup language used to add formatting elements to plaintext text documents. You can <a href="https://www.markdownguide.org" class="govuk-link">learn more about writing Markdown with this guide</a>.</p>
+</li>
+<li>
+<p class="govuk-body">Save the file, and visit the browser. You should see your new post listed on the home page.</p>
+</li>
+</ol>
+<h2 id="launch" tabindex="-1" class="govuk-heading-l"><a class="app-link--heading govuk-link" href="#launch"><span>Launch</span></a></h2>
+<p class="govuk-body"><a href="https://www.gov.uk/guidance/government-design-principles#make-things-open-it-makes-things-better" class="govuk-link">Make things open, it makes them better</a>. You can do this by deploying (or uploading) your design history to a third-party host. This project includes support for 2 different services, Heroku and Netlify.</p>
+<h3 id="heroku" tabindex="-1" class="govuk-heading-m"><a class="app-link--heading govuk-link" href="#heroku"><span>Heroku</span></a></h3>
+<p class="govuk-body">Follow this <a href="https://devcenter.heroku.com/articles/github-integration" class="govuk-link">guide on connecting a GitHub repository to Heroku</a>. This is the easiest way to ensure changes are automatically deployed once they are merged to the default branch.</p>
+<p class="govuk-body">The process is very similar to <a href="https://govuk-prototype-kit.herokuapp.com/docs/publishing-on-heroku" class="govuk-link">setting up a prototype on Heroku</a>.</p>
+<h4 id="password-protect-your-design-history" tabindex="-1" class="govuk-heading-s"><a class="app-link--heading govuk-link" href="#password-protect-your-design-history"><span>Password protect your design history</span></a></h4>
+<p class="govuk-body">We’ve found it’s better to keep a design history public. But if you need to password protect yours, you can add a username and password using environment variables (Heroku calls these “config vars”):</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>set <code class="x-govuk-code x-govuk-code--inline">USERNAME</code> and <code class="x-govuk-code x-govuk-code--inline">PASSWORD</code> environment <a href="https://devcenter.heroku.com/articles/config-vars#managing-config-vars" class="govuk-link">variables on your Heroku app</a></li>
+<li>update the <a href="https://devcenter.heroku.com/articles/procfile" class="govuk-link"><code class="x-govuk-code x-govuk-code--inline">Procfile</code></a> in the root folder with the following content:</li>
+</ul>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--text" tabindex="0"><code>web: http-server --username $USERNAME --password $PASSWORD -p $PORT
+</code></pre>
+
+<h3 id="netlify" tabindex="-1" class="govuk-heading-m"><a class="app-link--heading govuk-link" href="#netlify"><span>Netlify</span></a></h3>
+<p class="govuk-body">Follow this <a href="https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/" class="govuk-link">guide on deploying websites to Netlify</a>. When asked for a build command, use <code class="x-govuk-code x-govuk-code--inline">npm run build</code>.</p>
+
+
+          
+</div>
+    </div>
+
+      <div class="govuk-grid-column-one-third-from-desktop">
+<div class="x-govuk-related-navigation">
+    <nav class="x-govuk-related-navigation__nav-section" role="navigation" aria-labelledby="related-navigation-related-content">
+      <h2 class="x-govuk-related-navigation__main-heading" id="related-navigation-related-content">
+        Related content
+      </h2>
+        <ul class="x-govuk-related-navigation__link-list">
+            <li class="x-govuk-related-navigation__link">
+              <a class="govuk-link x-govuk-related-navigation__section-link x-govuk-related-navigation__section-link--other" href="https://github.com/x-govuk/govuk-design-history">GOV.UK Design History on GitHub</a>
+            </li>
+            <li class="x-govuk-related-navigation__link">
+              <a class="govuk-link x-govuk-related-navigation__section-link x-govuk-related-navigation__section-link--other" href="https://www.11ty.dev/docs/">Eleventy documentation</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+      </div>
+  </div>
+        </main>
+      </div>
+
+  <footer class="govuk-footer app-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <span class="govuk-footer__licence-description">
+            An unofficial community project. <a class="govuk-footer__link" href="https://github.com/x-govuk/x-govuk.github.io">GitHub source</a>.
+          </span>
+      </div>
+      <div class="govuk-footer__meta-item">© X-GOVUK
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/design-history/assets/govuk.js"></script>
+  <script>document.documentElement.classList.remove('no-js')</script>
+  </body>
+</html>
