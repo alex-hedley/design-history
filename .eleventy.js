@@ -6,12 +6,17 @@ module.exports = function (eleventyConfig) {
   const pathPrefix = process.env.GITHUB_ACTIONS
     ? '/design-history/'
     : '/'
+  const assetPath = process.env.GITHUB_ACTIONS 
+    ? '/design-history/assets/' 
+    : '/assets/'
+
   // https://x-govuk.github.io/govuk-eleventy-plugin/options/
   eleventyConfig.addPlugin(require('govuk-eleventy-plugin'), {
     stylesheets: [
       '/styles/application.css'
     ],
     headingPermalinks: true,
+    assetPath,
     pathPrefix, 
     url,
     header: {
