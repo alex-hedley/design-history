@@ -40,6 +40,8 @@ a:focus, .govuk-link:focus {
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 a:link, .govuk-link:link {
   color: #1d70b8;
@@ -1220,6 +1222,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .js-enabled .govuk-accordion__show-all:focus .govuk-accordion-nav__chevron {
   background: #0b0c0c;
@@ -1306,6 +1310,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .js-enabled .govuk-accordion__section-button:focus .govuk-accordion-nav__chevron {
   color: #0b0c0c;
@@ -1446,6 +1452,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .govuk-back-link:link, .govuk-back-link:visited {
   color: #0b0c0c;
@@ -1605,6 +1613,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .govuk-breadcrumbs__link:link, .govuk-breadcrumbs__link:visited {
   color: #0b0c0c;
@@ -2559,6 +2569,9 @@ p + .govuk-heading-s,
     font-variant-numeric: tabular-nums;
   }
 }
+.govuk-character-count__message:after {
+  content: "​";
+}
 
 .govuk-character-count__message--disabled {
   visibility: hidden;
@@ -3047,6 +3060,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .govuk-details__summary-text {
@@ -3245,6 +3260,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .govuk-error-summary__list a:link, .govuk-error-summary__list a:visited {
   color: #d4351c;
@@ -3378,6 +3395,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .govuk-footer__link:link, .govuk-footer__link:visited {
   color: #0b0c0c;
@@ -3691,6 +3710,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .govuk-header__link--homepage {
@@ -3836,6 +3857,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .govuk-header__menu-button:after {
   display: inline-block;
@@ -4184,6 +4207,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .govuk-notification-banner__link:link {
   color: #1d70b8;
@@ -4363,13 +4388,15 @@ p + .govuk-heading-s,
   display: block;
   min-width: 15px;
 }
-.govuk-pagination__link:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+@media screen {
+  .govuk-pagination__link:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }
 .govuk-pagination__link:hover .govuk-pagination__link-title--decorated, .govuk-pagination__link:active .govuk-pagination__link-title--decorated {
   text-decoration: underline;
@@ -4482,6 +4509,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .govuk-pagination--block .govuk-pagination__link:not(:focus) {
   text-decoration: none;
@@ -4865,6 +4894,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .govuk-tabs__tab:link {
   color: #1d70b8;
@@ -7677,6 +7708,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .x-govuk-primary-navigation__link:link {
   color: #1d70b8;
@@ -7932,6 +7965,8 @@ p + .govuk-heading-s,
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .x-govuk-sub-navigation__link:link {
   color: #1d70b8;
@@ -8657,6 +8692,8 @@ a:focus .x-govuk-code--inline {
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .app-contents-list a:link {
   color: #1d70b8;
@@ -8747,7 +8784,7 @@ a:focus .x-govuk-code--inline {
   margin-left: 25px;
 }
 
-.app-document-footer__metadata {
+.app-document-header__metadata {
   font-family: "GDS Transport", arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8758,19 +8795,19 @@ a:focus .x-govuk-code--inline {
   color: #505a5f;
 }
 @media print {
-  .app-document-footer__metadata {
+  .app-document-header__metadata {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .app-document-footer__metadata {
+  .app-document-header__metadata {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
   }
 }
 @media print {
-  .app-document-footer__metadata {
+  .app-document-header__metadata {
     font-size: 14pt;
     line-height: 1.5;
   }
