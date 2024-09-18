@@ -1674,7 +1674,7 @@ p + .govuk-heading-s,
   border-radius: 0;
   color: #ffffff;
   background-color: #00703c;
-  box-shadow: 0 2px 0 #002d18;
+  box-shadow: 0 2px 0 rgb(0, 44.8, 24);
   text-align: center;
   vertical-align: top;
   cursor: pointer;
@@ -1717,7 +1717,7 @@ p + .govuk-heading-s,
   border: 0;
 }
 .govuk-button:hover {
-  background-color: #005a30;
+  background-color: rgb(0, 89.6, 48);
 }
 .govuk-button:active {
   top: 2px;
@@ -1762,18 +1762,18 @@ p + .govuk-heading-s,
 .govuk-button[disabled=disabled]:active,
 .govuk-button[disabled]:active {
   top: 0;
-  box-shadow: 0 2px 0 #002d18;
+  box-shadow: 0 2px 0 rgb(0, 44.8, 24);
 }
 
 .govuk-button--secondary {
   background-color: #f3f2f1;
-  box-shadow: 0 2px 0 #929191;
+  box-shadow: 0 2px 0 rgb(145.8, 145.2, 144.6);
 }
 .govuk-button--secondary, .govuk-button--secondary:link, .govuk-button--secondary:visited, .govuk-button--secondary:active, .govuk-button--secondary:hover {
   color: #0b0c0c;
 }
 .govuk-button--secondary:hover {
-  background-color: #dbdad9;
+  background-color: rgb(218.7, 217.8, 216.9);
 }
 .govuk-button--secondary:hover[disabled] {
   background-color: #f3f2f1;
@@ -1781,13 +1781,13 @@ p + .govuk-heading-s,
 
 .govuk-button--warning {
   background-color: #d4351c;
-  box-shadow: 0 2px 0 #55150b;
+  box-shadow: 0 2px 0 rgb(84.8, 21.2, 11.2);
 }
 .govuk-button--warning, .govuk-button--warning:link, .govuk-button--warning:visited, .govuk-button--warning:active, .govuk-button--warning:hover {
   color: #ffffff;
 }
 .govuk-button--warning:hover {
-  background-color: #aa2a16;
+  background-color: rgb(169.6, 42.4, 22.4);
 }
 .govuk-button--warning:hover[disabled] {
   background-color: #d4351c;
@@ -3267,7 +3267,7 @@ p + .govuk-heading-s,
   color: #d4351c;
 }
 .govuk-error-summary__list a:hover {
-  color: #942514;
+  color: rgb(148.4, 37.1, 19.6);
 }
 .govuk-error-summary__list a:active {
   color: #d4351c;
@@ -4234,7 +4234,7 @@ p + .govuk-heading-s,
   color: #00703c;
 }
 .govuk-notification-banner--success .govuk-notification-banner__link:hover {
-  color: #004e2a;
+  color: rgb(0, 78.4, 42);
 }
 .govuk-notification-banner--success .govuk-notification-banner__link:active {
   color: #00703c;
@@ -4674,48 +4674,48 @@ p + .govuk-heading-s,
 }
 
 .govuk-tag--grey {
-  color: #383f43;
-  background: #eeefef;
+  color: rgb(56, 63, 66.5);
+  background: rgb(237.5, 238.5, 239);
 }
 
 .govuk-tag--purple {
-  color: #3d2375;
-  background: #dbd5e9;
+  color: rgb(60.8, 35.2, 116.8);
+  background: rgb(219.2, 212.8, 233.2);
 }
 
 .govuk-tag--turquoise {
-  color: #10403c;
-  background: #bfe3e0;
+  color: rgb(16, 64.4, 60.4);
+  background: rgb(190.5, 226.8, 223.8);
 }
 
 .govuk-tag--blue {
-  color: #144e81;
-  background: #d2e2f1;
+  color: rgb(20.3, 78.4, 128.8);
+  background: rgb(209.8, 226.4, 240.8);
 }
 
 .govuk-tag--yellow {
-  color: #594d00;
-  background: #fff7bf;
+  color: rgb(89.25, 77.35, 0);
+  background: rgb(255, 246.5, 191.25);
 }
 
 .govuk-tag--orange {
-  color: #6e3619;
-  background: #fcd6c3;
+  color: rgb(109.8, 53.55, 25.2);
+  background: rgb(251.7, 214.2, 195.3);
 }
 
 .govuk-tag--red {
-  color: #942514;
-  background: #f6d7d2;
+  color: rgb(148.4, 37.1, 19.6);
+  background: rgb(246.4, 214.6, 209.6);
 }
 
 .govuk-tag--pink {
-  color: #80224d;
-  background: #f7d7e6;
+  color: rgb(127.8, 33.6, 76.8);
+  background: rgb(246.6, 215.2, 229.6);
 }
 
 .govuk-tag--green {
-  color: #005a30;
-  background: #cce2d8;
+  color: rgb(0, 89.6, 48);
+  background: rgb(204, 226.4, 216);
 }
 
 .govuk-phase-banner {
@@ -7384,7 +7384,7 @@ p + .govuk-heading-s,
 .x-govuk-breadcrumbs--inverse {
   padding-bottom: 15px;
   padding-top: 15px;
-  border-bottom: 1px solid #5694ca;
+  border-bottom: 1px solid rgb(85.5, 147.75, 201.75);
   color: #ffffff;
   margin-top: 0;
 }
@@ -7406,7 +7406,7 @@ p + .govuk-heading-s,
   margin-top: 20px;
   color: #1d70b8;
   background-color: #ffffff;
-  box-shadow: 0 2px 0 #144e81;
+  box-shadow: 0 2px 0 rgb(20.3, 78.4, 128.8);
   margin-bottom: 0;
 }
 @media (min-width: 40.0625em) {
@@ -7419,7 +7419,7 @@ p + .govuk-heading-s,
 
 .x-govuk-button--inverse:hover {
   color: #1d70b8;
-  background-color: #e8f1f8;
+  background-color: rgb(232.4, 240.7, 247.9);
 }
 
 .x-govuk-button--inverse:focus:not(:hover) {
@@ -7431,12 +7431,12 @@ p + .govuk-heading-s,
 .x-govuk-button--inverse:focus {
   border-color: #ffdd00;
   color: #1d70b8;
-  background-color: #e8f1f8;
+  background-color: rgb(232.4, 240.7, 247.9);
   box-shadow: inset 0 0 0 2px #ffdd00;
 }
 
 .x-govuk-phase-banner--inverse {
-  border-bottom-color: #5694ca;
+  border-bottom-color: rgb(85.5, 147.75, 201.75);
 }
 .x-govuk-phase-banner--inverse .govuk-phase-banner__content {
   color: #ffffff;
@@ -8437,7 +8437,7 @@ a:focus .x-govuk-code--inline {
 
 .x-govuk-code__comment,
 .x-govuk-code__quote {
-  color: #858c8f;
+  color: rgb(132.5, 139.5, 143);
   font-style: italic;
 }
 
@@ -8506,11 +8506,11 @@ a:focus .x-govuk-code--inline {
 }
 
 .x-govuk-code__deletion {
-  background: #f6d7d2;
+  background: rgb(246.4, 214.6, 209.6);
 }
 
 .x-govuk-code__addition {
-  background: #cce2d8;
+  background: rgb(204, 226.4, 216);
 }
 
 .x-govuk-code__emphasis {
@@ -9127,7 +9127,7 @@ a[aria-describedby=footnotes-label]:after {
   color: #0b0c0c;
 }
 .app-footnotes-list :target {
-  background-color: #fff7bf;
+  background-color: rgb(255, 246.5, 191.25);
 }
 .app-footnotes-list :last-child {
   margin-bottom: 0;
@@ -9207,7 +9207,7 @@ a[aria-describedby=footnotes-label]:after {
   text-decoration-style: double;
 }
 .app-prose-scope mark {
-  background-color: #ffee80;
+  background-color: rgb(255, 238, 127.5);
 }
 .app-prose-scope sub,
 .app-prose-scope sup {
