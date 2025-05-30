@@ -17,7 +17,7 @@ export default function (eleventyConfig) {
     },
     url:
       process.env.GITHUB_ACTIONS &&
-      'https://x-govuk.github.io/govuk-design-history-template/'
+      'https://alex-hedley.github.io/design-history/'
   })
 
   // Passthrough
@@ -33,6 +33,6 @@ export default function (eleventyConfig) {
       layouts: '_layouts',
       includes: '_components'
     },
-    pathPrefix: process.env.GITHUB_ACTIONS && '/govuk-design-history-template/'
+    pathPrefix: process.env.GITHUB_ACTIONS && '/design-history/'
   }
 }
